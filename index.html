@@ -6,25 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Titans</title>
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
 <script>
-	((p,u,s,h,l,y)=>{
-       p._push={"apiKey":"5103219341893510"};
-	   p._pushfcm = {
-	       apiKey: "",
-	       location:'qa',
-	       authDomain: "",
-	       databaseURL: "",
-	       projectId: "",
-	       storageBucket: "",
-	       messagingSenderId: "",
-	       appId: ""
-	     };
-          l = u.getElementsByTagName('head')[0];
-	      y = u.createElement('script');
-	      y.async = 1;
-	      y.src = s+h;
-          l.appendChild(y);
-	})(window,document,'https://infinity-public-js.500apps.com/push/','push.min.js');
+  window.OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "06a64f3f-dfa8-48ec-81ae-a1f47c64218c",
+    });
+  });
 </script>
 </head>
 
