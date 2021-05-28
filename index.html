@@ -9,12 +9,23 @@
 <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
 <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
 <script>
-  window.OneSignal = window.OneSignal || [];
-  OneSignal.push(function() {
-    OneSignal.init({
-      appId: "06a64f3f-dfa8-48ec-81ae-a1f47c64218c",
-    });
-  });
+	((p,u,s,h,l,y)=>{
+       p._push={"apiKey":'7391798061652617'};
+	   p._pushfcm = {
+	       apiKey: "",
+	       location:'ap1',
+	       authDomain: "",
+	       databaseURL: "",
+	       projectId: "",
+	       storageBucket: "",
+	       messagingSenderId: "",
+	       appId: ""
+	     };
+          l = u.getElementsByTagName('head')[0];
+	      y = u.createElement('script');
+	      y.async = 1;
+	      y.src = s+h;
+          l.appendChild(y);})(window,document,'https://infinity-public-js.500apps.com/push/','push.min.js');
 </script>
 </head>
 
