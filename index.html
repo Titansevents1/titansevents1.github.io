@@ -9,19 +9,17 @@
   <meta name="keywords" content="global, template, html, sass, jquery">
   <meta name="author" content="Bucky Maler">
   <link rel="stylesheet" href="assets/css/main.css">
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-N878X35');</script>
-<!-- End Google Tag Manager -->
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+  window.OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "1a9b9bf7-1a5d-4c9b-8291-6fa671ed054e",
+    });
+  });
+</script>
 <head>
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N878X35"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 <div class="device-notification">
   <a class="device-notification--logo" href="#0">
     <img src="assets/img/logo.png" alt="Global">
