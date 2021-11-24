@@ -11,13 +11,19 @@
   <link rel="stylesheet" href="assets/css/main.css">
 <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
 <script>
-  window.OneSignal = window.OneSignal || [];
-  OneSignal.push(function() {
-    OneSignal.init({
-      appId: "1a9b9bf7-1a5d-4c9b-8291-6fa671ed054e",
-    });
-  });
-</script>
+    ((p,u,s,h)=>{
+         p._push={"apiKey":'1441025738723016'};
+         p._pushfcm = {
+           location:'ap1'
+         };
+          let l,y;
+          l = u.getElementsByTagName('head')[0];
+          y = u.createElement('script');
+          y.async = 1;
+          y.id="pushninja_script"
+          y.src = s+h;
+          l.appendChild(y);})(window,document,'https://infinity-public-js.500apps.com/push/','push.min.js');
+  </script>
 <head>
 <body>
 <div class="device-notification">
