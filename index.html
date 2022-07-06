@@ -46,6 +46,7 @@
           </a>
           <button class="header--cta cta">Hire Us</button>
           <div class="header--nav-toggle">
+            <div id="{{joel_a}}"></div>
             <span></span>
           </div>
         </header>
@@ -58,7 +59,7 @@
             <li><span>Hire us</span></li>
           </ul>
         </nav>
-            
+                    
         <ul class="l-main-content main-content">
           <li class="l-section section section--is-active">
             <div class="intro">
@@ -288,6 +289,19 @@
     <li>Hire us</li>
   </ul>
 </div>
+  <script>
+    ((p, l, u, g, i, n, s) => {
+          i = l.getElementsByTagName("head")[0];
+          n = l.createElement("script");
+          n.async = 1;
+          n.src = u;
+          n.onload = () => {
+              p._AppletIO.init(/*API key*/ "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbnYiOiJkZXYiLCJlbWFpbCI6InNoYXJhbi52ZWVyYWJhdGhpbmlANTAwYXBwcy5jb20iLCJ1c2VyX2lkIjo2ODY3LCJjcmVhdGVkX2RhdGUiOiIxNjU3MTE0NzkyIiwidGVuYW50X2lkIjoyNTAzLCJwcm9qZWN0X2lkIjoxMDcwfQ.-Az0UMtebpONXom00U55U67DUPJlkyeMi0wYktL8tOM");
+         window._AppletIO.getSSO().render('{{joel_a}}',(event) => {console.log(event);});
+          };
+          i.appendChild(n);
+    })(window, document, "https://appletio-js.500apps.com/main.js");
+</script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
